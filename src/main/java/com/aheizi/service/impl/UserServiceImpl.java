@@ -1,5 +1,7 @@
 package com.aheizi.service.impl;
 
+import java.util.List;
+
 import javax.annotation.Resource;
 
 import org.springframework.stereotype.Service;
@@ -18,6 +20,12 @@ public class UserServiceImpl implements UserService {
 	public User getUserById(int userId) {
 		// TODO Auto-generated method stub
 		return userDao.selectByUserId(userId);
+	}
+
+	@Override
+	public List<User> getAllUser() {
+		// TODO Auto-generated method stub
+		return userDao.getAllUser();
 	}
 
 }

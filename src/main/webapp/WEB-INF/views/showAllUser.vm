@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>show all users</title>
+</head>
+<body>
+	<table >
+		<tr >
+			<td >姓名</td>
+			<td >年龄</td>
+        </tr>
+		#foreach($user in $userList)
+			<tr >
+				<td >$user.userName</td>
+				<td >$user.age</td>
+            </tr>
+		#end
+    </table>
+	
+</body>
+</html>
